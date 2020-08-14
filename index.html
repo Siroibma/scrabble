@@ -1,0 +1,65 @@
+<!--
+File: /~alora1/public_html/assignments/8/index.html (91.46) COMP 4610 GUI Programming I
+Assignment 8: Scrabble
+Ambioris Lora, UMass Lowell Computer Science, alora1@cs.uml.edu
+Copyright (c) 2020 by Ambioris Lora. All rights reserved. May be
+freely
+copied or excerpted for educational purposes with credit to the
+author.
+-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Scrabble</title>
+    <!--Our Style Sheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Jquery/JqueryUI files along with the dictionary file -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!--<script type="text/javascript" src ="dictionary.js"> </script> -->
+  </head>
+  <body>
+
+    <div class="header">
+      <h1>Assignment 8</h1>
+      <h2>Scrabble</h2>
+    </div>
+
+    <div>
+      <ul id="Information">
+        <li id = "score">Score:</li>
+        <li id = "tiles-left">Tiles Left: </li>
+        <li id = "word">Word: </li>
+      </ul>
+    </div>
+
+    <!-- This div stores Both the board and row for the tile -->
+    <div id="content">
+      <div id="board">
+        <div class = "basic" id = "space1"> </div>
+        <div class = "double" id = "space2"> </div>
+        <div class = "basic" id= "space3"> </div>
+        <div class = "basic" id = "space4"> </div>
+        <div class = "basic" id = "space5"> </div>
+        <div class = "double" id = "space6"> </div>
+        <div class = "basic" id = "space7"> </div>
+      </div>
+      <div id="row">
+      </div>
+    </div>
+
+    <!-- Buttons That control The game -->
+    <div id ='tools'>
+      <button type="button" onclick="startGame()" id = "onStart">Start Game</button>
+      <button type="button" id ="nextWord">Next Word</button>
+      <button type="button" onclick="refreshPage()">Start Over</button>
+    </div>
+
+    <!--Call the Games JS file -->
+    <script type="text/javascript" src="scrabble.js"></script>
+
+  </body>
+</html>

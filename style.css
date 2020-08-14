@@ -1,0 +1,99 @@
+/*
+File: /~alora1/public_html/assignments/8/style.css(91.46) COMP 4610 GUI Programming I
+Assignment 8: Scrabble
+Ambioris Lora, UMass Lowell Computer Science, alora1@cs.uml.edu
+Copyright (c) 2020 by Ambioris Lora. All rights reserved. May be
+freely
+copied or excerpted for educational purposes with credit to the
+author.
+*/
+
+
+/*Style the row */
+#row {
+  width:675px;
+  height:100px;
+  background-image:url('row.png');
+  margin: auto;
+  margin-top:20px;
+  background-repeat: no-repeat;
+
+}
+
+body {
+  background-color:  AntiqueWhite;
+}
+
+.header {
+  margin: auto;
+  border-bottom: 2px black solid;
+}
+
+/*Here we set the size of the board itself */
+#board {
+  width: 800px;
+  height: 100px;
+  margin: auto;
+}
+
+/*Dobule Space */
+.double {
+  border: 2px solid black;
+  padding: 50px;
+  background: url(double.jpg);
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+/*Regular Space */
+.basic {
+  border: 2px solid black;
+  padding: 50px;
+  background: url(blank.jpg);
+  background-repeat: no-repeat;
+  background-size: 100px 100px;
+  display: inline-block;
+}
+
+#letter1 {
+  border: 1px black solid;
+
+}
+
+#draggable, #draggable2 {
+  width: 70px;
+  height: 70px;
+  padding: 0.5em;
+  float: left;
+  margin: 10px 10px 10px 0;
+  border: black 1px solid;
+}
+
+#droppable, #droppable2 {
+    width: 150px;
+    height: 150px;
+    padding: 0.5em;
+    float: left;
+    margin: 10px;
+    border: black 1px solid;
+}
+
+/*This is for live update box */
+#Information {
+    border: 1px solid black;
+    width: 10%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+/*Style the tile pieces themselves */
+#row > img {
+    width: 70px;
+    height: 70px;
+    margin-left: 10px;
+    left: 50px;
+}
+#tools {
+    margin: auto;
+}
